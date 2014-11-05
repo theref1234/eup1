@@ -1,6 +1,10 @@
 body {
-    background-image: url("images/test_background.png");
+    background-image: url("images/img_0053.jpg");
 }
+html {
+  margin: 0;
+  padding: 0;
+  }
 
 img {
     float: right;
@@ -12,9 +16,13 @@ body {
      color: blue;
 }
 
+div{
+    text-align:left;
+
+}
 
 
-/* START NAV MENU */
+
 nav {
   background-color:#2C5463;
   height:40px;
@@ -83,4 +91,8 @@ nav ul li ul li a {
     text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
 }
  
-/* END NAV MENU */
+.page-wrapper { 
+   width: 960px;
+  position: relative;
+  margin: 0 auto;
+  }
