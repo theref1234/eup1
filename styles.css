@@ -1,98 +1,129 @@
 body {
-    background-image: url("images/img_0053.jpg");
-}
-html {
-  margin: 0;
-  padding: 0;
-  }
-
-img {
-    float: right;
+    background: gray;
 }
 
-
-body {
-    text-align: left;
-     color: blue;
+  #container {
+  width:1050px;
+  backgrpound:white;
+  margin:10px;
+  padding 2px;
+  border:2px solid blue;
+}
+div {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+    -webkit-align-content: space-around; /* Safari 7.0+ */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+} 
+ul {
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-div{
-    text-align:left;
-
+li {
+    float: left;
 }
 
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
+a:hover, a:active {
+    background-color: #7A991A;
+}
+</style>
+</head>
+<body>
 
-nav {
-  background-color:#2C5463;
-  height:40px;
-}
- 
- 
-nav ul {
-  font-family: Arial, Verdana;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
- 
-nav ul li {
-  display: block;
-  position: relative;
-  float: left;
- 
-}
- 
-nav li ul {
-  display: none;
-}
- 
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 7px 15px 3px 15px;
-  background: #2C5463;
-  color: #ffffff; 
-  margin-left: 1px;
-  white-space: nowrap;
-  height:30px; /* Width and height of top-level nav items */
-  width:90px;
-  text-align:center;
- 
-}
- 
-nav ul li a:hover {
-  background: #617F8A;
-}
- 
-nav li:hover ul {
-  display: block;
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+} 
+
+aside {
+
   position: absolute;
-  height:30px;
+  width:350px;
+  right: 10px;
+  margin-right:50px;
+  border:2px solid blue;
 }
- 
-nav li:hover li {
-  float: none;
-  font-size: 11px;
- 
-}
- 
-nav li:hover a {
-  background: #3A464F;
-  height:30px; /* Height of lower-level nav items is shorter than main level */
-}
- 
-nav li:hover li a:hover {
-  background: #95A9B1;
-}
- 
-nav ul li ul li a {
-    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
-}
- 
-.page-wrapper { 
-   width: 960px;
-  position: relative;
-  margin: 0 auto;
+img.floatLeft {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  border:10px;
   }
+  .nav {
+  position: absolute; /* set the position for the nav elements */
+  top: 73px;
+  right: 0;
+  width: 360px;
+  padding: 0;
+  } 
+
+.nav ul {               /* turn off all the normal list behavior */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {               /* turn off the normal list item behavior */
+    float: left;
+    margin: 0;
+    padding:0;
+}
+
+.nav a:link, a:visited {
+    font-family: "Trebuchet MS", sans-serif;
+    display: block;         /* block mode for graphical button */
+    color: black
+    ;            /* lavender text */
+    text-decoration: none;  /* no underline */
+    padding: 0 10px 0 25px; /* line up text & image */
+    margin-right: 0px;
+    line-height: 25px;
+    background: url(nav.png) no-repeat left bottom;
+    border: none;           /* no border */
+}
+.nav li a:hover, li a:active {
+    color: #8C8889;         /* grey color for text */
+    background-position: left top;      /* move image to show rollover */
+}
+
+.nav ul li a.current {  /* different look for "current" link */
+    margin-top: 0px;
+    height: 25px;
+    background: url(nav-current.png) no-repeat;
+    color: #aaa;
+    line-height: 25px;
+}
+
+.nav ul li a.current:hover {
+    cursor: default;
+} 
+.nav {
+  position: absolute; /* set the position for the nav elements */
+  top: 73px;
+  right: 0;
+  width: 360px;
+  padding: 0;
+
+
